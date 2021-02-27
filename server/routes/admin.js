@@ -21,7 +21,9 @@ const {isAdmin} = require('../middlewares/roleMiddleware');
   * @Desc : view all employees
   * @Access : protected
   */
- router.get('/view-all-employees',authMiddleware,isAdmin,adminController.viewAllEmployee);
+
+//  uthMiddleware,isAdmin,
+ router.get('/view-all-employees',adminController.viewAllEmployee);
 
 
   /**

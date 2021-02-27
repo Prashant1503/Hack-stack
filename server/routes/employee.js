@@ -38,8 +38,9 @@ const router = express.Router();
  * @Desc : View all projects for employee
  * @Access : protected
  */
+// authMiddleware,isEmployee,
 
-router.get('/view-all-projects',authMiddleware,isEmployee,empController.viewAllProjects);
+router.get('/view-all-projects',empController.viewAllProjects);
 
 
 /**
